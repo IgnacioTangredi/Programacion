@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BurgerLovers</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> 
+  <!-- My css-->
+  <link rel="stylesheet" href="./index.css">
+</head>  
+<body>
+<nav class="navbar navbar-expand-lg bg-success">
+  <div class="container-fluid">
+    <img src="./media/Loginho.png" alt="logo">
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./veggies.html">Veggies</a>
+        </li>
+        <li class="nav-item" href="#">
+          <a class="nav-link" href="./recetas.html">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lugares.html">Lugares</a>
+        </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+      
+  <!-- carousel -->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" data-bs-interval="1800">
+        <img src="./media/carousel1.jpg" class="d-block w-100" alt="slider1">
+      </div>
+      <div class="carousel-item" data-bs-interval="1800">
+        <img src="./media/carousel2.jpg" class="d-block w-100" alt="slider2">
+      </div>
+      <div class="carousel-item active" data-bs-interval="1800">
+        <img src="./media/carousel3.jpg" class="d-block w-100" alt="slider3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Titulo -->
+  <div class="title">
+      <h1>¡Bienvenidos a BurgerLovers!</h1>
+      <p>Un blog dedicado para conocer todo tipo de burgers, una comunidad de personas como vos amantes de las hamburguesas de cualquier tipo.</p>
+  </div>
+
+  <!-- Cards -->
+<main class="container-fluid">
+  <div class="card-group">
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card">
+          <img src="./media/Card1 (baconator).jpg" class="card-img-top" alt="baconator">
+          <div class="card-body">
+            <h5 class="card-title">Baconator</h5>
+            <p class="card-text">La tan famosa burger de Wendy's representada por Caprettacastelar, compuesta por queso cheddar, bacon ahumado, ketchup y mayonesa.</p>
+            <a href="#" class="btn btn-success">Leer más...</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card">
+          <img src="./media/Card2 (clasica).jpg" class="card-img-top" alt="clasica">
+          <div class="card-body">
+            <h5 class="card-title">Clásica</h5>
+            <p class="card-text">Esta burger es la american tradicional la burger nro.1 en ee.uu y un exito en todo el mundo. Con cebolla, lechuga, tomate, queso cheddar y un agregado de pepinillos.</p>
+            <a href="#" class="btn btn-success">Leer más...</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card">
+          <img src="./media/Card3 (Big forts).jpg" class="card-img-top" alt="bigforts">
+          <div class="card-body">
+            <h5 class="card-title">Big Forts</h5>
+            <p class="card-text">Una burger algo exótica, aunque muy parecida a la american. Esta burger se compone de cebolla picada, pepinillos, lechuga y queso cheddar.</p>
+            <a href="#" class="btn btn-success">Leer más...</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card">
+          <img src="./media/Card4 (Muzza+Cheddar).jpg" class="card-img-top" alt="muzzacheddar">
+          <div class="card-body">
+            <h5 class="card-title">MuzzCheddar</h5>
+            <p class="card-text">Sos amante del queso y además de las burgers, entonces esta es tu opción. La Muzzcheddar se compone de dos ingredientes, queso cheddar y muzzarella.</p>
+            <a href="#" class="btn btn-success">Leer más...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img src="./media/Card5 (Crispy).jpg" class="card-img-top" alt="crispy">
+            <div class="card-body">
+              <h5 class="card-title">Crispy</h5>
+              <p class="card-text">Esta burger es de las mejores, los chicos de burger like nos deleitan con esta rica burger, que tiene cebolla crispy como anfitriona, queso cheddar, salsa mil islas y panceta.</p>
+              <a href="#" class="btn btn-success">Leer más...</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="card">
+            <img src="./media/Card6 (Cheesebacon).jpg" class="card-img-top" alt="cheesebacon">
+            <div class="card-body">
+              <h5 class="card-title">Cheesebacon</h5>
+              <p class="card-text">Otra burger muy clásica y leal, esta recibe el nombre de cheesebacon. Se compone por un rico pan de queso parmesano, queso cheddar y bacon. Si te gusta lo simple esta es tu opción.</p>
+              <a href="#" class="btn btn-success">Leer más...</a>
+            </div>
+          </div>
+        </div> 
+        
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+           <div class="card">
+             <img src="./media/Card7 (Triple Qe).jpg" class="card-img-top" alt="tripleqe">
+            <div class="card-body">
+              <h5 class="card-title">Triple Qe</h5>
+              <p class="card-text">Que decirles de la triple qe de forever.burgerlove, contiene tres medallones, queso cheddar y pan de queso parmesano. Parece ser muy simple, pero es una bomba de sabor.</p>
+              <a href="#" class="btn btn-success">Leer más...</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+           <div class="card">
+              <img src="./media/Card8 (Argenta).jpg" class="card-img-top" alt="argenta">
+             <div class="card-body">
+              <h5 class="card-title">Argenta</h5>
+              <p class="card-text">Una burger al estilo argentino de los chicos de smashburgerlomas. Esta smashburger tiene como ingredientes queso muzzarella y jamón cocido. Simple pero rica.</p>
+              <a href="#" class="btn btn-success">Leer más...</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+           <div class="card">
+              <img src="./media/Card9 (The Porky Smash).jpg" class="card-img-top" alt="theporkysmash">
+            <div class="card-body">
+              <h5 class="card-title">The Porky Smash</h5>
+              <p class="card-text">Esta smashburger es una obra de arte y un placer para tu paladar. Esta smash tiene cebolla caramelizada, barbacoa, bacon y queso cheddar.</p>
+              <a href="#" class="btn btn-success">Leer más...</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+   </div>
+  </main>
+    
+  <!--footer-->
+  <div class="row">
+    <footer class="pie-de-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <nav>
+                  <a href="#">
+                      <img src="./media/Loginho.png">
+                  </a>
+              </nav>
+          </div>
+          <div class="box">
+              <h2>Sobre Nosotros</h2>
+              <p>Formamos un blog dedicado pura y exclusivamente para conocer nuevas burgers</p>
+              <p>Gente como vos creo esta comunidad para los amantes y fans de las hamburguesas</p>
+          </div>
+          <div class="box">
+              <h2>Seguinos</h2>
+          <div class="red-social">
+              <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+              <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+              <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+              <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+          </div>
+      </div>
+      
+      <div class="grupo-2">
+          <small>© 2021 <b>burgerLovers</b> - Todos los derechos reservados</small>
+      </div>
+    </div></footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
