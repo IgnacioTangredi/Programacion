@@ -17,13 +17,13 @@ nav img{
     right: 10px;
    }
 
-   .navbar .nav-item{
+.navbar .nav-item{
     margin-left: 20px;
     cursor: pointer;
    }
 
 
-   nav ul li a:hover{
+nav ul li a:hover{
     background-color: #ffbc0e;
     padding: 5px;
     border-radius: 20px;
@@ -119,10 +119,10 @@ nav img{
 }
 
 @media (max-width:1083){
-    nav img{
+nav img{
         width: 100px;
         position: relative;
         right: 20px;
-       }
+}
 }
 
