@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="venta de hamburguesas">
+    <meta name="keywords" content="venta de hamburguesas y alimentos">
+    <title>Burger Like</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.0/scss/bootstrap.css">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--My css-->
+    <link rel="stylesheet" href="./scss/styles.css"">
+</head>
+<body>
+
+<!--Menubar-->
+ <nav class="navbar navbar-expand-lg text-bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Like Burger</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menú.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menú premium.html">Menu premium</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Carousel-->
+  <div id="carousel" class="carousel slide">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./media/Patty Melt (Premium).jpg" class="d-block w-100" alt="hamburguesa patty melt">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Linea Premium</h5>
+              <p>Conoce nuestra linea de burgers premium</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./media/Phillycheese (Premium).jpg" class="d-block w-100" alt="sanguche phillycheese">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Linea Premium</h5>
+              <p>Conoce nuestra linea de burgers premium</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./media/MediaLike (Premium).jpg" class="d-block w-100" alt="hamburguesa medialike">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Linea Premium</h5>
+              <p>Conoce nuestra linea de burgers premium</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+<!--Quienes somos + Ubicacion + boton menú-->
+<section class="aboutus">
+    <div class="title">
+        <h2>Sobre Nosotros</h2>
+    </div>
+        <div class="content">
+          <p>Somos un grupo de amigos fanaticos y amantes de las hamburguesas donde nuestra amistad se forjo por comer burgers, y esto nos llevo a decidir abrir nuestro propio local de hamburguesas.</p>
+        </div>
+      </section>
+      <section class="ubicacion">
+        <div class="title">
+          <h2>Ubicacion</h2>
+        </div>
+        <div class="content">
+          <p>Nos ubicamos en Argentina Morón, Buenos Aires desde el año 2021.</p>
+        </div>
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.781769831844!2d-58.634536223298696!3d-34.66021386048565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35571aff931435%3A0xa7dcd54e2dea04b5!2sClub%20Deportivo%20Mor%C3%B3n!5e0!3m2!1ses-419!2sar!4v1690176783029!5m2!1ses-419!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+      </section>
+      <section class="btn-menu">
+        <div class="title">
+          <h2>¿Te gustaria conocer nuestro menú?</h2>
+        </div>
+        <div class="btn">
+          <a href="menú.html"><button>Menú</button></a>
+        </div>
+      </section>
+    
+<!-- Pie de página -->
+<div class="row">
+    <footer class="pie-de-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <nav>
+                  <a href="#">
+                      <img src="./media/Logo Like.jpg" alt="logotipo de like burger">
+                  </a>
+              </nav>
+          </div>
+          <div class="box">
+              <h2>Seguinos</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+              <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+              <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+              <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+            </div>
+          </div>
+        <div class="grupo-2">
+          <small>© 2021 <b>LikeBurger</b> - Todos los derechos reservados</small>
+        </div>
+    
+      </div>
+    </footer>
+</div>
+    
+<!-- Script de bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

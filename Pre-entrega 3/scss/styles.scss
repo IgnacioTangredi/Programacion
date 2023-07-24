@@ -1,0 +1,198 @@
+@import "../libs/bootstrap-5.3.0/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,800&display=swap');
+
+// Variables //
+
+$color-fondo: #181818;
+$color-bar: #3a3a3ace;
+$color-menu: #f1423cce;
+$color-footer:#000000e5;
+$color-texto: #515050e1;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: $color-fondo;
+}
+
+// Quienes somos //
+ .aboutus {
+    background-color: #ffbc0e;
+    width: 75%;
+    padding: 25px;
+    margin-left: 12%;
+    margin-top: 5%;
+    border-radius: 12%;
+ }
+ .aboutus p{
+    text-align: center;
+ }
+ .aboutus .title {
+    text-align: center;
+    position:relative;
+    top: 25%;
+}
+
+// Ubicacion //
+
+.ubicacion {
+    width: 75%;
+    background-color: #ffbc0e;
+    border-radius: 12%;
+    text-align: center;
+    padding: 25px;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+.title {
+   text-align: center;
+   color:#eb300f;
+}
+
+.ubicacion p {
+    text-align: center;
+}
+
+.ubicacion iframe{
+    width: 100%;
+    position: relative;
+    
+}
+
+// boton menu //
+.btn-menu {
+    width: 75%;
+    background-color: #ffbc0e;
+    border-radius: 12%;
+    padding: 25px;
+    margin-left: 12%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.btn button:hover{
+    color: #fff;
+}
+// Pie de pagina //
+.pie-de-pagina{
+    width: 100%;
+    background-color:$color-footer;
+}
+
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color:#ffbc0e;
+}
+
+.pie-de-pagina .grupo-1 .box img:hover{
+    transform: scale(1.2);  
+}
+
+ 
+// Nesting o Anidacion //
+
+// Menubar //
+.navbar-nav{ 
+    .nav-item:hover {
+        background-color: yellow;
+        border-radius: 12px;
+    }  
+}
+
+// Quienes somos//
+.btn-menu {
+    .btn button {
+        background-color: red;
+        padding: 0 20px;
+        border-radius: 12%;
+        color: #ffbc0e;
+    }
+}
+
+// pie de pagina //
+
+.pie-de-pagina {
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 150px;
+        border-radius: 50px;
+    }
+
+    .box h2{
+        color:#e2f1f8;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .box p{
+        color:#e2f1f8;
+        margin-bottom: 10px;
+    }
+
+    .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+    }
+
+    .grupo-2{
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .grupo-2 small{
+        font-size:15px;
+    }
+}
+
+// Querys //
+@media (max-width: 1250px) {
+    .btn-menu button {
+        width:100%;
+    }
+}
+
+@media (max-width:750px) {
+    .ubicacion iframe {
+        position:initial;
+        right: 100%;
+        width: 100%;
+    }
+
+    .btn-menu button {
+        position:static;
+        width:100%;
+        
+    }
+
+}
