@@ -1,0 +1,184 @@
+@use './anidacion';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+ // Variables //
+ $color-header:rgb(120, 54, 6);
+ $color-background:linear-gradient(coral,grey);
+ $color-footer:rgb(120, 54, 6);
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Titillium Web', sans-serif;
+    background:$color-background;
+}
+header {
+    background-color:$color-header;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.container-form {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    align-items: center;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin: 90px;
+}
+.container-form .btn-enviar:hover{
+    background-color: #e39403;
+}
+.pie-de-pagina{
+    width: 100%;
+    position: relative;
+    top: 165px;
+    background-color:$color-footer;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 150px;
+        border-radius: 50px;
+    }
+
+    .box h2{
+        color:#e2f1f8;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .box p{
+        color:#e2f1f8;
+        margin-bottom: 10px;
+    }
+
+    .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+    }
+
+    .grupo-2{
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .grupo-2 small{
+        font-size:15px;
+    }
+}
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color:#ffbc0e;
+}
+.pie-de-pagina .grupo-1 .box img:hover{
+    transform: scale(1.2);  
+}
+// Queries //
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+        margin: 0;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 20px;
+        background-color: rgb(77, 76, 76);
+        position:fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: 40%;
+        line-height: 70px;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 100;
+    }
+    .nav-link {
+        font-weight: 700;
+        font-size: 100px;
+        border-bottom: 2px solid coral;
+    }
+    .nav-link:hover {
+        background: none;
+        color:#fff;
+    }
+    header .nav-toggle {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    
+    .container-form {
+        position: relative;
+        right: 85px;
+        bottom: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        p {
+            width:80%;
+            font-size: 18px;
+        }
+        .btn-enviar {
+            position: relative;
+            right: 32%;
+            top: 20px;
+        }
+        .campo {
+            position: relative;
+            left: 10%;
+            width: 75%;
+        }
+        textarea {
+            position: relative;
+            left: 13%;
+            height: 40%;
+        }
+        
+    }
+    .pie-de-pagina {
+        .grupo-1 {
+            gap: 1%;
+        }
+    }
+}
