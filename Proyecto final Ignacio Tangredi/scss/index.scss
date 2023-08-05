@@ -1,0 +1,147 @@
+@use './anidacion';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+
+//Variables//
+$color-fondo:black;
+$color-header:rgb(120, 54, 6);
+$color-footer:rgb(120, 54, 6);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family:'Titillium Web', sans-serif;
+   background:$color-fondo;
+}
+header {
+    background-color:$color-header;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.burger  {
+    background-image: url(../media/backgroundcarrousel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px ;
+}
+.btn-menu {
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    position: relative;
+    bottom: 110px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.pie-de-pagina{
+    width: 100%;
+    background-color:$color-footer;
+}   
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color:#ffbc0e;
+ }
+.pie-de-pagina .grupo-1 .box img:hover{
+    transform: scale(1.2);  
+}
+//Queries//
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+        margin: 0;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(77, 76, 76);
+        position:fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: 40%;
+        line-height: 70px;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 100;
+    }
+    .nav-link {
+        font-weight: 700;
+        font-size: 100px;
+        border-bottom: 2px solid coral;
+    }
+    .nav-link:hover {
+        background: none;
+        color:#fff;
+    }
+    header .nav-toggle {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    .burger {
+        padding: 60px;
+        z-index: 50;
+    }
+    .btn-menu {
+        position: relative;
+        background: chocolate;
+        border: 1px solid #ffbc0e;
+        top: 10px;
+        width: 60%;
+        
+        h1 {
+            color: rgb(254, 254, 254);
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        .locate {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+    }
+    .map {
+        position: relative;
+        left: 55px;
+        margin-bottom: 50px;
+        width: 50%;
+        height:50%;
+    }
+    
+    .pie-de-pagina {
+        .grupo-1 {
+            gap: 1%;
+        }
+    }
+    
+}
+
+

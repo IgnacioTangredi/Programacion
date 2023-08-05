@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap");
+header .logo {
+  position: relative;
+  left: 40px;
+  bottom: 5px;
+}
+header .logo img {
+  height: 90px;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+header .nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+header .nav-link {
+  color: rgb(11, 11, 11);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 7px 13px;
+  line-height: 80px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .nav-link:hover {
+  background-color: rgb(120, 69, 69);
+  color: #f45;
+}
+header .nav-toggle {
+  display: none;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.pie-de-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-de-pagina section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-de-pagina img {
+  width: 150px;
+  border-radius: 50px;
+}
+.pie-de-pagina .box h2 {
+  color: #e2f1f8;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-de-pagina .box p {
+  color: #e2f1f8;
+  margin-bottom: 10px;
+}
+.pie-de-pagina .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+}
+.pie-de-pagina .grupo-2 {
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-de-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+.burger .swiper {
+  width: 100%;
+}
+.burger .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+}
+.burger .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.btn-menu h1 {
+  color: rgb(221, 89, 1);
+  font-weight: 700;
+  font-size: 35px;
+}
+.btn-menu a {
+  text-decoration: none;
+  color: red;
+}
+.btn-menu .btn {
+  background: #fff;
+  color: rgb(250, 49, 66);
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn-menu .btn:hover {
+  background: grey;
+  color: rgb(246, 117, 128);
+}
+
+.container .about-us {
+  border: 3px solid rgb(244, 84, 26);
+}
+.container .about-us h2 {
+  color: #f45;
+  font-weight: 700;
+  font-size: 50px;
+}
+.container .about-us p {
+  color: #ffbc0e;
+}
+.container .locate {
+  border: 3px solid rgb(244, 84, 26);
+  grid-row: 2;
+  grid-column: 2;
+}
+.container .locate h2 {
+  color: #f45;
+  font-weight: 700;
+  font-size: 50px;
+}
+.container .locate p {
+  color: #ffbc0e;
+}
+.container .locate .map {
+  position: relative;
+  top: 50px;
+}
+
+.nuestro-menu h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f8bc07;
+}
+.nuestro-menu p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.title-burger i {
+  color: rgb(1, 157, 1);
+}
+.title-burger h1 {
+  font-size: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f45;
+}
+.title-burger p {
+  font-size: 20px;
+  top: 80px;
+  font-weight: 700;
+  color: rgb(185, 103, 3);
+}
+
+.card .card-name {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 5px;
+  background: linear-gradient(transparent 80%, #000000) var --i;
+  background-size: cover;
+  z-index: 100;
+}
+.card .card-name h6 {
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #ffbc0e;
+  visibility: visible;
+}
+.card .card-info {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 15px;
+  background: #ffbc0e;
+  z-index: 90;
+  box-shadow: 0 5px 10px #000;
+  transition: 0.5s;
+}
+.card .card-info .head {
+  border-bottom: 1px solid #bc2211;
+}
+.card .card-info .head .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bc3611;
+  text-align: center;
+}
+.card .card-info .content {
+  margin-top: 0;
+  text-align: center;
+}
+.card .card-info .content .list {
+  position: relative;
+  bottom: 10px;
+  padding: 10px 15px;
+}
+.card .card-info .content .list li {
+  font-size: 12px;
+}
+.card .card-info .action {
+  position: relative;
+  margin-top: 5%;
+  bottom: 25%;
+}
+.card .card-info .btn {
+  position: absolute;
+  padding: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: black;
+  width: 80%;
+  text-decoration: none;
+  text-align: center;
+  background: #bc2211;
+}
+.card .card-info .btn:hover {
+  color: #f8bc07;
+  background: #fff;
+}
+.card .prices {
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.card .prices th, .card .prices td {
+  padding: 2px;
+  text-align: center;
+}
+
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: red;
+}
+.container-form p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #dbdbdb;
+}
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: rgb(81, 81, 81);
+  font-weight: 700;
+}
+.container-form i {
+  color: rgb(255, 60, 0);
+  margin-right: 10px;
+}
+.container-form .campo, .container-form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: rgb(230, 49, 18);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(../media/fondomenu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: rgb(120, 54, 6);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nuestro-menu {
+  position: relative;
+  padding: 80px;
+  margin-top: 25px;
+  height: 40px;
+  text-align: center;
+}
+
+.title-burger {
+  display: flex;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 70px;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  left: 95px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 270px;
+  margin-bottom: 100px;
+  margin-left: 25%;
+  z-index: 50;
+}
+
+.card:hover .card-info {
+  left: 100%;
+}
+
+.pie-de-pagina {
+  width: 100%;
+  background-color: rgb(120, 54, 6);
+}
+
+@media (max-width: 1250px) {
+  body {
+    margin: 0;
+    background-position: center;
+  }
+  .card {
+    position: relative;
+    right: 250px;
+    z-index: 50;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+    margin: 0;
+    background-position: center;
+  }
+  .logo img {
+    height: 60px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(77, 76, 76);
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    height: 40%;
+    line-height: 70px;
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 100;
+  }
+  .nav-link {
+    font-weight: 700;
+    font-size: 100px;
+    border-bottom: 2px solid coral;
+  }
+  .nav-link:hover {
+    background: none;
+    color: #fff;
+  }
+  header .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+  .title-burger h1 {
+    font-size: 90px;
+  }
+  .nuestro-menu {
+    position: relative;
+    bottom: 40px;
+  }
+  .nuestro-menu h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .nuestro-menu p {
+    font-size: 16px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 100px;
+  }
+  .card {
+    position: relative;
+    right: 150px;
+    z-index: 50;
+  }
+  .pie-de-pagina .grupo-1 {
+    gap: 1%;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,153 @@
+@use './anidacion';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+
+//Variables//
+$color-header:rgb(120, 54, 6);
+$color-footer:rgb(120, 54, 6);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family:'Titillium Web', sans-serif;
+   background-image: url(../media/fondomenu.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+header {
+    background-color:$color-header;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nuestro-menu{
+    position: relative;
+    padding: 80px;
+    margin-top: 25px;
+    height: 40px;
+    text-align: center;
+}
+.title-burger {
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 70px;
+}
+.container {
+    display: grid;
+    position: relative;
+    left: 95px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 270px;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    z-index:50;
+}
+.card:hover .card-info {
+    left: 100%;
+}
+.pie-de-pagina{
+    width: 100%;
+    background-color:$color-footer;
+}
+//Queries//
+@media (max-width: 1250px) {
+    body {
+        margin: 0;
+        background-position: center;
+    }
+    .card {
+        position: relative;
+        right: 250px;
+        z-index: 50;
+    }
+    
+}
+
+@media (max-width:768px) {
+    body {
+        padding-top: 70px;
+        margin: 0;
+        background-position: center;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(77, 76, 76);
+        position:fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: 40%;
+        line-height: 70px;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 100;
+    }
+    .nav-link {
+        font-weight: 700;
+        font-size: 100px;
+        border-bottom: 2px solid coral;
+    }
+    .nav-link:hover {
+        background: none;
+        color:#fff;
+    }
+    header .nav-toggle {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    .title-burger {
+        h1 {
+            font-size: 90px;
+        }
+    }
+    .nuestro-menu {
+        position: relative;
+        bottom: 40px;
+        h2 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-right: 100px;
+    }
+    .card {
+        position: relative;
+        right: 150px;
+        z-index: 50;
+    }
+    .pie-de-pagina {
+        .grupo-1 {
+            gap: 1%;
+        }
+    }
+}

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+
+//Variables//
+$color-header:rgb(120, 54, 6);
+$color-footer:rgb(120, 54, 6);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family:'Titillium Web', sans-serif;
+   background-image: url(../media/Fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+header {
+    background-color:$color-header;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .logo {
+        position: relative;
+        left: 40px;
+        bottom: 5px;
+    }
+    .logo img {
+        height: 90px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .nav-menu {
+        display: flex;
+        margin-right: 40px;
+        list-style: none;
+    }
+    .nav-link {
+        color:rgb(11, 11, 11);
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 10px;
+        padding: 7px 13px;
+        line-height: 80px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        width:max-content;
+    }
+    .nav-link:hover {
+        background-color: rgb(120, 69, 69);
+        color: #f45;
+    }
+    .nav-toggle {
+        display:none;
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding : 0 20px;
+        line-height: 60px;
+    }
+}
+.title-burger {
+    display: flex;
+    position: relative;
+    right: 25px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 70px;
+    
+    i {
+        color:rgb(1, 157, 1);
+    }
+    h1{
+        font-size: 120px;
+        font-weight: 700;
+        color:#ffc800;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 700;
+        color:coral;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 140px;
+}
+.card {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    height: 270px;
+    margin-bottom: 100px;
+    margin-left: 25%;
+
+    .card-name{
+        position: relative;
+        width: 90%;
+        height: 90%;
+        box-shadow: 0 5px;
+        background: linear-gradient(transparent 80%, #000000) var (--i);
+        background-size: cover;
+        z-index: 100;
+    }
+    .card-name h6 {
+        position:absolute;
+        left: 10px;
+        top: 235px;
+        font-size: 25px;
+        font-weight: 900;
+        color: #f8bc07;
+        visibility:visible;
+    }
+    
+    .card-info {
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        padding: 15px;
+        background: #ffbc0e;
+        z-index: 90;
+        box-shadow: 0 5px 10px #000;
+        transition: 0.5s;
+
+        .head {
+            border-bottom: 1px solid #bc2211;
+        }
+    
+        .head .title {
+            font-size: 20px;
+            font-weight: 700;
+            color:#bc3611;
+            text-align: center;
+        }
+    
+        .content {
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        .content .list {
+            position: relative;
+            bottom: 10px;
+            padding: 10px 15px;
+        }
+    
+        .content .list li {
+            font-size: 12px;
+        }
+    
+        .action {
+            position: relative;
+            margin-top: 5%;
+            bottom: 25%;
+        }
+    
+        .btn {
+            position: absolute;
+            padding: 2px;
+            margin-top: 6px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color:black;
+            width: 80%;
+            text-decoration: none;
+            text-align: center;
+            background: #bc2211;
+        }
+    
+        .btn:hover {
+            color:#f8bc07;
+        }
+    }
+    
+    .prices {
+        position: relative;
+        left: 90px;
+        bottom: 32px;
+        border-collapse:separate;
+        border-spacing: 10px;
+
+        th, td {
+            padding: 2px;
+            text-align: center;
+        }
+    }
+}
+.card:hover .card-info {
+    left: 100%;
+}
+.pie-de-pagina{
+    width: 100%;
+    position: relative;
+    top: 120px;
+    background-color:$color-footer;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 150px;
+        border-radius: 50px;
+    }
+    .box h2{
+        color:#e2f1f8;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .box p{
+        color:#e2f1f8;
+        margin-bottom: 10px;
+    }
+    .red-social a{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+    }
+    .grupo-2{
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .grupo-2 small{
+        font-size:15px;
+    }
+}    
+.pie-de-pagina .grupo-1 .red-social a:hover{
+        color:#ffbc0e;
+}
+.pie-de-pagina .grupo-1 .box img:hover{
+        transform: scale(1.2);  
+}
+//Queries//
+@media (max-width:768px) {
+    body {
+        padding-top: 70px;
+        margin: 0;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(77, 76, 76);
+        position:fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: 40%;
+        line-height: 70px;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 100;
+    }
+    .nav-link {
+        font-weight: 700;
+        font-size: 100px;
+        border-bottom: 2px solid coral;
+    }
+    .nav-link:hover {
+        background: none;
+        color:#fff;
+    }
+    header .nav-toggle {
+        display: block;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+    .card {
+        position: relative;
+        right: 30px;
+        z-index: 50;
+    }
+    .pie-de-pagina {
+        .grupo-1 {
+            gap: 1%;
+        }
+    }
+}
